@@ -1,0 +1,6 @@
+.next/dev/types/validator.ts(141,39): error TS2307: Cannot find module '../../../src/app/orders/page.js' or its corresponding type declarations.
+.next/dev/types/validator.ts(150,39): error TS2307: Cannot find module '../../../src/app/page.js' or its corresponding type declarations.
+.next/dev/types/validator.ts(159,39): error TS2307: Cannot find module '../../../src/app/products/[id]/page.js' or its corresponding type declarations.
+.next/dev/types/validator.ts(168,39): error TS2307: Cannot find module '../../../src/app/products/page.js' or its corresponding type declarations.
+.next/types/validator.ts(42,39): error TS2307: Cannot find module '../../src/app/page.js' or its corresponding type declarations.
+src/app/(main)/products/page.tsx(76,41): error TS2367: This comparison appears to be unintentional because the types 'Category' and 'string' have no overlap.
