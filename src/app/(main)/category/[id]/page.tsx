@@ -18,6 +18,7 @@ import grid3 from "@/assets/images/grid-6.svg";
 import { type ProductT } from '@/services/product.service';
 import { comboProducts } from '@/lib/static';
 import Skeleton from '@/components/ui/skelenton-loader';
+import { RxHamburgerMenu, RxCross1 } from "react-icons/rx";
 
 
 function CategoryPageContent() {
@@ -31,6 +32,7 @@ function CategoryPageContent() {
   const [selectedSort, setSelectedSort] = useState("All Batteries");
   const dropdownRef = useRef<HTMLDivElement | null>(null);
   const [selectedTag, setSelectedTag] = useState<string>("all");
+  const [catMenuOpen, setCatMenuOpen] = useState(false);
 
   const searchParams = useSearchParams();
   const name = searchParams.get("name");
@@ -144,18 +146,24 @@ function CategoryPageContent() {
         <aside className="lg:w-[22%]">
           <CatBreadcrumbs />
           <div className="bg-white pt-10 pb-5 rounded-[10px] border border-[#EAEAEA]">
-            <h1 className={`${manrope.className} ml-[7%] font-[600] text-[17px] text-[#000000]`}>Categories</h1>
-            <nav className='mt-7'>
-              <ul>
+            <div className='flex items-center justify-between pr-4'>
+              <h1 className={`${manrope.className} ml-[7%] font-[600] text-[17px] text-[#000000]`}>Categories</h1>
+              {catMenuOpen ? <RxCross1 className='text-[24px] cursor-pointer' onClick={() => setCatMenuOpen(!catMenuOpen)} /> : <RxHamburgerMenu className='text-[24px] cursor-pointer' onClick={() => setCatMenuOpen(!catMenuOpen)} />}
+            </div>
+            <nav className={`mt-7 absolute md:static lg:static xl:static w-[89.3%] bg-white overflow-hidden ${catMenuOpen ? 'max-h-[500px]' : 'max-h-0'} transition-all duration-300 ease-in-out`}>
+              <ul className='grid grid-cols-2 md:flex lg:flex xl:flex'>
                 {
                   menus.map((menu, idx) => (
                     <div key={idx} className='flex items-center gap-2 mt-1 border-b border-[#F9F9F9] pb-3 pl-[15%] cursor-pointer'
-                      onClick={() => setTitle(menu.title)}
+                      onClick={() => {
+                        setTitle(menu.title);
+                        setCatMenuOpen(!catMenuOpen)
+                      }}
                     >
                       <div className='bg-[#F9F9F9] w-[36.73px] h-[36.73px] flex items-center justify-center rounded-[7.06px]'>
                         <Image src={menu.img} alt="alt" className='w-[16.74px] h-[24.92px]' />
                       </div>
-                      <p className={`${manrope.className} lg:text-[12px] xl:text-[14px] ${menu.title === title && "text-[#0C6170] font-bold"}`}>{menu.title}</p>
+                      <p className={`${manrope.className} text-[10px] md:text-[10px] lg:text-[12px] xl:text-[14px] ${menu.title === title && "text-[#0C6170] font-bold"}`}>{menu.title}</p>
                     </div>
                   ))
                 }
@@ -205,7 +213,7 @@ function CategoryPageContent() {
 
               <div className='mt-5'>
                 <div className='flex items-center justify-between'>
-                  <div className='flex items-center gap-2'>
+                  <div className='items-center gap-2 hidden md:flex lg:flex xl:flex'>
                     <div>
                       <Image src={grid3} alt="icon" />
                     </div>
@@ -222,7 +230,9 @@ function CategoryPageContent() {
                           setIsOpenSort(false)
                         }}
                       >
-                        {prodType}
+                        <div className="max-w-[100px] truncate">
+                          {prodType}
+                        </div>
                         {isOpen ? <GoChevronUp size={20} className='ml-5' /> : <GoChevronDown size={20} className='ml-5' />}
                       </Button>
 

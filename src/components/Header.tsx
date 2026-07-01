@@ -153,7 +153,7 @@ export default function Header() {
         !isExcluded
         &&
         <div className="flex flex-wrap md:flex lg:flex xl:flex justify-between items-center px-[2%] md:px-[2%] lg:px-[5%] xl:px-[5%] py-3 bg-[#e8f1f2] text-gray-800 font-medium border-b border-gray-200">
-          <div className="flex items-center justify-center gap-2 cursor-pointer absolute md:static lg:static xl:static top-[32.3%]">
+          <div className="flex items-center justify-center gap-2 cursor-pointer absolute md:static lg:static xl:static top-[32.7%]">
             <Image src={headset} alt="icon" />
             <span className={`${manrope.className} font-[500] text-[10px] lg:text-[13px] md:text-[10px]`}>Help: 0906 710 8888</span>
           </div>
@@ -177,7 +177,7 @@ export default function Header() {
               <span className={`${manrope.className} font-[500] text-[10px] lg:text-[13px] md:text-[10px]`}>Customise Power</span>
             </a>
           </div>
-          <div className="flex justify-center gap-2 items-center md:justify-between lg:justify-between xl:justify-between mt-3 lg:mt-0 md:mt-0 relative md:static lg:static xl:static right-[-52%]">
+          <div className="flex justify-center gap-2 items-center md:justify-between lg:justify-between xl:justify-between mt-3 lg:mt-0 md:mt-0 relative md:static lg:static xl:static left-[43%]">
             <span className={`${manrope.className} font-[500] text-gray-700 text-[10px] lg:text-[13px] md:text-[10px]`}>Repayment: <span className="text-[#0C6170] text-[10px] lg:text-[16px] md:text-[10px]">$1,256.50</span></span>
             <button className="bg-[#0C6170] text-white text-[10px] md:text-[10px] lg:text-[12px] xl:text-[12px] px-5 py-1.5 rounded font-medium cursor-pointer">
               Pay Now

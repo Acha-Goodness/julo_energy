@@ -8,16 +8,13 @@ type DropMenuProps = {
     selected: string;
     setSelected: (value: string) => void;
     prodType: string;
-    id?:string;
+    id?: string;
 }
 
 export default function DropDown({ menus, open, selected, setSelected, prodType, id }: DropMenuProps) {
 
-    console.log(id)
-    console.log(open)
-
     return (
-        <div className={`${id === "modal" ? "w-full rounded-0 bg-white text-black" : "w-[35%] rounded-[5px] absolute md:w-[17.3%] lg:w-[17.3%] xl:w-[10%] shadow-sm  bg-white overflow-hidden"}`}>
+        <div className={`${id === "modal" ? "w-full rounded-0 bg-white text-black" : "w-[55%] rounded-[5px] absolute md:w-[17.3%] lg:w-[17.3%] xl:w-[10%] shadow-sm  bg-white overflow-hidden"}`}>
             {/* Dropdown List */}
             <div className={`overflow-y-auto transition-all ${open ? 'max-h-[500px]' : 'max-h-0'}`}>
                 <div className='px-5 py-3'>
