@@ -177,7 +177,7 @@ export default function Header() {
               <span className={`${manrope.className} font-[500] text-[10px] lg:text-[13px] md:text-[10px]`}>Customise Power</span>
             </a>
           </div>
-          <div className="flex justify-center gap-2 items-center md:justify-between lg:justify-between xl:justify-between mt-3 lg:mt-0 md:mt-0 relative md:static lg:static xl:static left-[43%]">
+          <div className="flex justify-center gap-2 items-center md:justify-between lg:justify-between xl:justify-between mt-3 lg:mt-0 md:mt-0 relative md:static lg:static xl:static left-[53%]">
             <span className={`${manrope.className} font-[500] text-gray-700 text-[10px] lg:text-[13px] md:text-[10px]`}>Repayment: <span className="text-[#0C6170] text-[10px] lg:text-[16px] md:text-[10px]">$1,256.50</span></span>
             <button className="bg-[#0C6170] text-white text-[10px] md:text-[10px] lg:text-[12px] xl:text-[12px] px-5 py-1.5 rounded font-medium cursor-pointer">
               Pay Now

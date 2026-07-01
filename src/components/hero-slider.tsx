@@ -29,32 +29,32 @@ export function HeroSlider() {
             alt="Banner"
             fill
             priority
-            className="object-contain"
+            className="object-cover"
           />
 
           {/* Dark Overlay */}
-          {/* <div className="absolute inset-0 bg-black/40" /> */}
+          <div className="absolute inset-0 bg-black/40" />
 
           {/* Content */}
-          {/* <div className="relative z-20 h-full flex items-center px-6 md:px-16">
-            <div className="max-w-xl text-white">
+          <div className="relative left-[5%] z-20 h-full flex items-center px-6 md:px-16">
+            <div className="max-w-[70%] text-white">
               <h1 className="text-4xl md:text-7xl font-black leading-none uppercase whitespace-pre-line">
                 {slide.title}
               </h1>
 
-              <div className="mt-8">
+              <div className="mt-4">
                 <p className="text-yellow-400 font-bold text-lg md:text-2xl uppercase">
                   Price From
                 </p>
 
-                <div className="inline-block bg-black px-6 py-3 mt-2 rotate-[-3deg]">
+                <div className="inline-block bg-black px-6 py-3 rotate-[-3deg]">
                   <p className="text-4xl md:text-6xl font-black">
                     {slide.price}
                   </p>
                 </div>
               </div>
             </div>
-          </div> */}
+          </div>
         </div>
       ))}
 

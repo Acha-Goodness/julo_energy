@@ -38,7 +38,10 @@ import powergen from "@/assets/images/powgenerator.png";
 import metro from "@/assets/images/metroo.png";
 import powgen from '@/assets/images/powgenerator.png';
 import powbank from '@/assets/images/pbank.png';
-import sliderOne from "@/assets/images/sliderOne.png";
+import sliderOne from "@/assets/images/sliderOnee.png";
+import sliderTwo from "@/assets/images/sliderTwo.png";
+import sliderThree from "@/assets/images/sliderThree.png";
+import sliderFour from "@/assets/images/sliderFour.png";
 import combo from "@/assets/images/solar.png";
 import hybrid from "@/assets/images/hybrid.svg";
 
@@ -185,13 +188,13 @@ export const comboProducts = [
     { id: "5", name: 'Smart Metro', slug: 'smart-metro', image: combo, tags: ["pure sine wave"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "6", name: 'Solar Panel', slug: 'solar-panel', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "7", name: 'Power Bank', slug: 'power-bank', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
-    { id: "8", name: 'Controller', slug: 'controller', image: combo, tags: ["pure sine wave"],  description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
+    { id: "8", name: 'Controller', slug: 'controller', image: combo, tags: ["pure sine wave"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "9", name: 'Roger', slug: 'roger', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124 },
     { id: "10", name: 'Power Generator', slug: 'power-generator', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "11", name: 'Smart Metro', slug: 'smart-metro', image: combo, tags: ["pure sine wave"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "12", name: 'Solar Panel', slug: 'solar-panel', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "13", name: 'Power Bank', slug: 'power-bank', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
-    { id: "14", name: 'Controller', slug: 'controller', image: combo, tags: ["pure sine wave"],  description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
+    { id: "14", name: 'Controller', slug: 'controller', image: combo, tags: ["pure sine wave"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "15", name: 'Roger', slug: 'roger', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124 },
     { id: "16", name: 'Power Generator', slug: 'power-generator', image: combo, type: hybrid, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
     { id: "17", name: 'Smart Metro', slug: 'smart-metro', image: combo, tags: ["hybrid"], description: 'High efficiency solar panel for maximum energy harvest.', price: 145000, stock: 15, productType: 'HARDWARE', rating: 4.8, reviewCount: 124, },
@@ -388,27 +391,27 @@ export const userInfo = [
 export const slides = [
     {
         id: 1,
-        image: sliderOne,
-        title: "RELIABLE\nPOWER\nZERO\nCOMPROMISE",
-        price: "₦270,000",
+        image: sliderThree,
+        title: "SMART POWER\nE-BIKE RUNNER",
+        price: "₦500,000",
     },
     {
         id: 2,
-        image: sliderOne,
-        title: "SOLAR\nENERGY\nFOR\nEVERYONE",
+        image: sliderTwo,
+        title: "SOLAR ENERGY\nFOR EVERYONE",
         price: "₦350,000",
     },
     {
         id: 3,
-        image: sliderOne,
-        title: "SMART\nPOWER\nBACKUP\nSYSTEM",
+        image: sliderFour,
+        title: "SMART POWER\nBACKUP SYSTEM",
         price: "₦500,000",
     },
     {
         id: 4,
         image: sliderOne,
-        title: "SMART\nPOWER\nBACKUP\nSYSTEM",
-        price: "₦500,000",
+        title: "RELIABLE POWER\nZERO COMPROMISE",
+        price: "₦270,000",
     },
 ];
 

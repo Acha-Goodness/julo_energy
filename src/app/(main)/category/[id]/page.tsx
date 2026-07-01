@@ -148,10 +148,12 @@ function CategoryPageContent() {
           <div className="bg-white pt-10 pb-5 rounded-[10px] border border-[#EAEAEA]">
             <div className='flex items-center justify-between pr-4'>
               <h1 className={`${manrope.className} ml-[7%] font-[600] text-[17px] text-[#000000]`}>Categories</h1>
-              {catMenuOpen ? <RxCross1 className='text-[24px] cursor-pointer' onClick={() => setCatMenuOpen(!catMenuOpen)} /> : <RxHamburgerMenu className='text-[24px] cursor-pointer' onClick={() => setCatMenuOpen(!catMenuOpen)} />}
+              <div className='md:hidden lg:hidden xl:hidden '>
+                {catMenuOpen ? <RxCross1 className='text-[24px] cursor-pointer' onClick={() => setCatMenuOpen(!catMenuOpen)} /> : <RxHamburgerMenu className='text-[24px] cursor-pointer' onClick={() => setCatMenuOpen(!catMenuOpen)} />}
+              </div>
             </div>
-            <nav className={`mt-7 absolute md:static lg:static xl:static w-[89.3%] bg-white overflow-hidden ${catMenuOpen ? 'max-h-[500px]' : 'max-h-0'} transition-all duration-300 ease-in-out`}>
-              <ul className='grid grid-cols-2 md:flex lg:flex xl:flex'>
+            <nav className={`mt-7 absolute md:static lg:static xl:static w-[89.3%] bg-white overflow-hidden ${catMenuOpen ? 'max-h-[500px] md:max-h-[100vh]' : 'max-h-0 md:max-h-[100vh]'} transition-all duration-300 ease-in-out`}>
+              <ul className='grid grid-cols-2 md:flex lg:flex xl:flex flex-col'>
                 {
                   menus.map((menu, idx) => (
                     <div key={idx} className='flex items-center gap-2 mt-1 border-b border-[#F9F9F9] pb-3 pl-[15%] cursor-pointer'
