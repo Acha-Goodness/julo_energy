@@ -247,8 +247,8 @@ function CategoryPageContent() {
                         {isOpenSort ? <GoChevronUp size={20} className='ml-5' /> : <GoChevronDown size={20} className='ml-5' />}
                       </Button>
                     </div>
-                    <DropDown menus={dropmenu} open={isOpen} selected={selected} setSelected={setSelected} prodType={prodType} />
-                    <SortDropDown menus={sortmenu} open={isOpenSort} selectedSort={selectedSort} setSelectedSort={setSelectedSort} />
+                    <DropDown menus={dropmenu} open={isOpen} setIsOpen={setIsOpen} selected={selected} setSelected={setSelected} prodType={prodType} />
+                    <SortDropDown menus={sortmenu} open={isOpenSort} setIsOpenSort={setIsOpenSort} selectedSort={selectedSort} setSelectedSort={setSelectedSort} />
                   </div>
                 </div>
 

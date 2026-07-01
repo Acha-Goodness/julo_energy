@@ -9,9 +9,10 @@ type DropMenuProps = {
     setSelected: (value: string) => void;
     prodType: string;
     id?: string;
+    setIsOpen?: (value: boolean) => void;
 }
 
-export default function DropDown({ menus, open, selected, setSelected, prodType, id }: DropMenuProps) {
+export default function DropDown({ menus, open, selected, setSelected, prodType, id, setIsOpen }: DropMenuProps) {
 
     return (
         <div className={`${id === "modal" ? "w-full rounded-0 bg-white text-black" : "w-[55%] rounded-[5px] absolute md:w-[17.3%] lg:w-[17.3%] xl:w-[10%] shadow-sm  bg-white overflow-hidden"}`}>
@@ -26,7 +27,8 @@ export default function DropDown({ menus, open, selected, setSelected, prodType,
                             <button
                                 onClick={(e) => {
                                     e.stopPropagation();
-                                    setSelected(menu)
+                                    setSelected(menu);
+                                    setIsOpen?.(false);
                                 }}
                                 className={`${manrope.className} w-full text-[14px] md:text-[12px] md:truncate lg:text-[14px] xl:text-[14px] text-[#000000] text-left px-6 h-[37px] transition-all
                                 ${selected === menu ? 'pl-2' : 'text-[#000000]'}

@@ -11,9 +11,9 @@ interface ModalProps {
     selected: string;
     setSelected: (value: string) => void;
     prodType: string;
-    id?:string;
+    id?: string;
     setIsOpen?: (value: boolean) => void;
-    option?:string;
+    option?: string;
 }
 
 export default function MobileDropModal({ setModalOpen, menus, open, selected, setSelected, prodType, id, setIsOpen, option }: ModalProps) {
@@ -30,9 +30,9 @@ export default function MobileDropModal({ setModalOpen, menus, open, selected, s
             <div onClick={(e) => e.stopPropagation()} className="w-full max-w-md">
                 {
                     option !== "sortDrop" ?
-                    <DropDown menus={menus} open={open} selected={selected} setSelected={setSelected} prodType={prodType} id="modal"/>
-                         :
-                    <SortDropDown menus={menus} open={open} selectedSort={selected} setSelectedSort={setSelected} id="modal"/>
+                        <DropDown menus={menus} open={open} selected={selected} setSelected={setSelected} prodType={prodType} id="modal" />
+                        :
+                        <SortDropDown menus={menus} open={open} selectedSort={selected} setSelectedSort={setSelected} id="modal" />
                 }
             </div>
         </div>
